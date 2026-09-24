@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Uneven Waters | Isabel Thompson</title>
+
+    <!-- ArcGIS Embedded Map -->
+    <script type="module" src="https://js.arcgis.com/5.1/embeddable-components/"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f2ea;
+            color: #1f2933;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .description {
+            max-width: 700px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .map-container {
+            width: 100%;
+        }
+
+        arcgis-embedded-map {
+            width: 100%;
+            height: 700px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Uneven Waters</h1>
+
+        <p class="description">
+            An analysis of urban flood risk and social vulnerability in Chicago,
+            examining where water-related 311 complaints overlap with
+            neighborhood-level social vulnerability.
+        </p>
+
+        <div class="map-container">
+
+            <arcgis-embedded-map
+                item-id="88cafb5811a340159bb7797cfd51a53b"
+                theme="light"
+                heading-enabled
+                legend-enabled
+                time-zone-label-enabled
+                center="-87.67465304154966,41.84615900634271"
+                scale="577790.5542885"
+                portal-url="https://www.arcgis.com">
+            </arcgis-embedded-map>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
